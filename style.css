@@ -1,0 +1,30 @@
+.nav {
+    position: relative;
+    grid-area: nav;
+}
+
+.components {
+    grid-area: components;
+}
+
+.page-break {
+    position: absolute;
+    border-left: 1px solid black;
+    height: 500px;
+    left: 100%;
+    top: 0px;
+    margin-left: -6px;
+}
+
+#section {
+    display: grid;
+    grid-template-areas: 
+    "nav components";
+    grid-template-columns: 0.25fr 1fr;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+}
