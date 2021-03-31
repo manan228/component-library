@@ -10,7 +10,7 @@
 .page-break {
     position: absolute;
     border-left: 1px solid black;
-    height: 500px;
+    height: 100%;
     left: 100%;
     top: 0px;
     margin-left: -6px;
@@ -18,8 +18,8 @@
 
 #section {
     display: grid;
-    grid-template-areas: 
-    "nav components";
+    grid-template-areas:
+        "nav components";
     grid-template-columns: 0.25fr 1fr;
 }
 
@@ -27,4 +27,151 @@
     vertical-align: middle;
     width: 50px;
     height: 50px;
+}
+
+.alert {
+    border: 1px solid transparent;
+}
+
+.alert-success {
+    background-color: aqua;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.alert-info {
+    background-color: orange;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.alert-warning {
+    background-color: yellow;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.alert-dangerous {
+    background-color: red;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.circular-badge {
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.badge-on-avatar {
+    position: relative;
+}
+
+.badge-on-avatar>.circular-badge {
+    position: absolute;
+    top: 0.5rem;
+    left: 10.7rem
+}
+
+.primary-button {
+    background-color: #337ab7;
+    border-radius: 1em;
+    padding: 0.5em 0.5em;
+    margin-bottom: 1rem;
+}
+
+.link-button {
+    text-decoration: none;
+    background-color: chocolate;
+    color: black;
+    border-radius: 1rem;
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 10rem;
+}
+
+.icon-button {
+    margin-top: 1rem;
+    padding: 0.5rem 0.3rem;
+    background-color: purple;
+    border-radius: 5rem;
+    margin-bottom: 1rem;
+}
+
+.icon-image {
+    height: 1.5em;
+    width: auto;
+    margin: auto;
+}
+
+.floating-action-button {
+    font-size: 2rem;
+    color: white;
+    border-radius: 50%;
+    background-color: royalblue;
+    text-align: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    box-shadow: 0 6px 10px 0 #666;
+    line-height: 40px;
+}
+
+.card-with-badge {
+    border: 1px solid black;
+    max-width: 15rem;
+    padding: 1rem;
+}
+
+.card-with-badge>.primary-button {
+    margin-bottom: 0rem;
+}
+
+.card-with-badge>.image-div {
+    text-align: center;
+    position: relative;
+}
+
+.card-with-badge>.image-div>.circular-badge {
+    position: absolute;
+    top: 0.5rem;
+    left: 10.5rem;
+}
+
+.responsive-image {
+    width: 100%;
+    max-width: 75%;
+    height: auto;
+}
+
+.round-image {
+    border-radius: 50%;
+}
+
+.textbox {
+    padding: 1rem 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.grey-text {
+    color: grey;
+}
+
+.center-text {
+    align-content: center;
+    margin: auto;
+}
+
+.stacked-list {
+    border: 1px solid black;
+    padding: 1em;
+    padding-bottom: 0em;
+    max-width: 300px;
 }
